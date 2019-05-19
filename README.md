@@ -4,6 +4,8 @@ Flutter just provide an estimated max scroll extent of the list view. Therefore 
 
 By override a small piece of code can make this possible. The point is that _RenderSliverList_ only stores "usefull" items and this leads to the unprecise estimation of other "unuseful" items. Thus, considering every item as useful will make the estimation precise.
 
+__Please note that this modification may affect the performance of the rendering__
+
 ## Example
 
 an example based on official get-started example which will jump to bottom after every pull-up-to-refresh and jump to top after every pull-down-to-refresh.
