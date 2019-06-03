@@ -2,7 +2,7 @@
 
 Flutter just provide an estimated max scroll extent of the list view. Therefore it might be difficult to directly jump to the bottom of the list view without reversing the list view.
 
-By override a small piece of code can make this possible. The point is that _RenderSliverList_ only stores "usefull" items and this leads to the unprecise estimation of other "unuseful" items. Thus, considering every item as useful will make the estimation precise.
+By override a small piece of code can make this possible. The point is that _RenderSliverList_ only stores "useful" items and this leads to the unprecise estimation of other "unuseful" items. Thus, considering every item as useful will make the estimation precise.
 
 __Please note that this modification may affect the performance of the rendering__
 
