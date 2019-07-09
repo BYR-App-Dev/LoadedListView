@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter/foundation.dart';
 
 class LoadedListView extends ListView {
   @override
@@ -227,7 +228,7 @@ class LoadedRenderSliverList extends RenderSliverList {
 
       final double firstChildScrollOffset =
           earliestScrollOffset - paintExtentOf(firstChild);
-      if (firstChildScrollOffset < -SliverGeometry.precisionErrorTolerance) {
+      if (firstChildScrollOffset < -precisionErrorTolerance) {
         double correction = 0.0;
         while (earliestUsefulChild != null) {
           assert(firstChild == earliestUsefulChild);
